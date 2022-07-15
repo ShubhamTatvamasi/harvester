@@ -20,5 +20,17 @@ Install qemu guest agent:
 sudo zypper install qemu-guest-agent
 ```
 
+update fstab:
+```bash
+sudo vim /etc/fstab
+```
 
+Change `ro` -> `rw`
+```
+/dev/loop0 / auto rw 0 0
+```
+
+```bash
+sudo mount -o remount,rw /dev/loop0 /
+```
 
