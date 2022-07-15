@@ -6,7 +6,7 @@ ssh rancher@192.168.4.40
 ```
 
 Update mounted disk to read and write:
-````bash
+```bash
 sudo mount -o remount,rw /dev/sdb3 /run/initramfs/cos-state
 ```
 
