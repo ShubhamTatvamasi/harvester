@@ -30,6 +30,7 @@ Change `ro` -> `rw`
 /dev/loop0 / auto rw 0 0
 ```
 
+Chnage manually:
 ```bash
 sudo mount -o remount,rw /dev/loop0 /
 ```
