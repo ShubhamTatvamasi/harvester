@@ -27,7 +27,7 @@ Ubuntu Network Config
 #network
   version: 2
   ethernets:
-    eth0:
+    enp1s0:
       addresses:
       - 192.168.4.51/24
       gateway4: 192.168.4.1
