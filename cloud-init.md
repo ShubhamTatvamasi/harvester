@@ -1,4 +1,4 @@
-# CLoud Init Config
+# Cloud Init Config
 
 User Config:
 ```yaml
