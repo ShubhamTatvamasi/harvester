@@ -25,7 +25,7 @@ ssh_authorized_keys:
     shubhamtatvamasi@gmail.com
 ```
 
-Ubuntu Network Config
+Network Config:
 ```yaml
 #network
   version: 2
