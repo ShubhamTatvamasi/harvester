@@ -3,14 +3,6 @@
 User Config:
 ```yaml
 #cloud-config
-users:
-- name: ubuntu
-  plain_text_passwd: 'ubuntu'
-  sudo: ALL=(ALL) NOPASSWD:ALL
-  groups: sudo
-  shell: /bin/bash
-  lock_passwd: false
-ssh_pwauth: True
 package_update: true
 packages:
   - qemu-guest-agent
@@ -19,7 +11,10 @@ runcmd:
     - enable
     - --now
     - qemu-guest-agent.service
-
+ssh_authorized_keys:
+  - ssh-ed25519
+    AAAAC3NzaC1lZDI1NTE5AAAAIOxN5VcvopmXS7fAA7ESjGYHNuAIWE7d0Fyj9Lh8lVZu
+    shubhamtatvamasi@gmail.com
 ```
 
 Ubuntu Network Config
